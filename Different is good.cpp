@@ -15,12 +15,12 @@ int main()
         cout << -1;
         return 0;
     }
-    string a;
+    string b;
     int i,j,count=0;
     cin >> a;
-    for(i=0;i<a.size();i++)
+    for(i=0;i<b.size();i++)
     {
-        x.insert(a[i]);
+        x.insert(b[i]);
     }
     cout << n - x.size();
     return 0;
