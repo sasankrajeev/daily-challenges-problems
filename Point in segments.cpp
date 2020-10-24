@@ -1,18 +1,18 @@
-#include <iostream>
-#include <cstdio>
+#include <bits/stdc++.h>
 using namespace std;
+#define ll long long
 
 int main() {
-    int n,m;
+    ll n,m;
     cin >> n; 
     cin >> m;
-    int a[n],b[n],i,p,q,l,s;
+    ll a[n],b[n],i,p,q,l,s;
     for(i=0;i<n;i++)
     {
         cin >> a[i];
         cin >> b[i];
     }
-    int c[m],j;
+    ll c[m],j;
     for(i=1;i<=m;i++)
     {
         c[i] = 1;
@@ -26,7 +26,7 @@ int main() {
             c[j] = 0;
         }
     }
-    int count = 0;
+    ll count = 0;
     for(i=1;i<=m;i++)
     {
         if(c[i]!=0)
