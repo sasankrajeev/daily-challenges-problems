@@ -1,16 +1,15 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
 
 int main() {
 
-    long long int a,b;
-    scanf("%lld%lld",&a,&b);
-    long long int i,j,p=1,l=1,p;
+    ll a,b;
+    cin >> a >> b;
+    ll i,j,p=1,l=1,p;
     if(b<a)
     {
-        printf("0");
+        cout << "0";
     }
     else{
         for(i=a+1;i<b+1;i++)
@@ -22,7 +21,7 @@ int main() {
             }
         }
     }
-    printf("%lld ",p);
+    cout << p;
 
     return 0;
 }
