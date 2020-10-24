@@ -1,20 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define ll long long
 
 int main() {
-    int n;
+    ll n;
     cin >> n;
     map <string,int> a;
-    for(int i=0;i<n;i++)
+    for(ll i=0;i<n;i++)
     {
         string s;
         cin >> s;
         a[s]++;
         if(a[s]==1)
         {
-            cout << "OK"<<endl;
+            cout << "OK" <<endl;
         }
-        else{
+        else
+        {
             cout << s << a[s]-1 << endl;
         }
     }
