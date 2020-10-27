@@ -1,18 +1,19 @@
-#include <stdio.h>
-#define ll long long int
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
 int main()
 {
     ll n,i,j,k;
-    scanf("%d",&n);
+    cout >> n;
     for(i=0;i<n;i++)
     {
         j=i%4;
         if(j<2)
         {
-            printf("a");
+            cout << "a";
         }
         else{
-            printf("b");
+            cout << "b";
         }
     }
     return 0;
