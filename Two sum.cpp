@@ -1,8 +1,11 @@
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
-int* twoSum(int* nums, int numsSize, int target) {
- int i,j,sum,k=0;
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+ int main()
+ {
+  ll nums,numsSize,target;
+  cin >> nums >> numsSize >> target;
+  ll i,j,sum,k=0;
     int *a = malloc(sizeof(int) * 2);
     for(i=0;i<numsSize;i++)
     {
@@ -19,5 +22,5 @@ int* twoSum(int* nums, int numsSize, int target) {
             }
         }
     }
-    return a;
+    cout << a;
 }
